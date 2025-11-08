@@ -47,7 +47,6 @@ export const BookingCheckout: React.FC<BookingCheckoutProps> = ({
 
       <div className="text-center text-sm text-neutral-500">
         <p>Ao confirmar, você concorda com nossos termos de serviço.</p>
-        <p>Você receberá uma confirmação por e-mail com os detalhes do agendamento.</p>
       </div>
     </div>
   );

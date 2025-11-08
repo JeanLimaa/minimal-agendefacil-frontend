@@ -169,8 +169,8 @@ export const useBooking = (initialCompany: Company) => {
         selectedTime: null,
         clientInfo: null,
       });
-      setCurrentStepIndex(0);
       
+      router.push(`/company/${company.link}/booking/confirmation`);
       return true;
     } catch (err) {
       setError('Erro ao confirmar agendamento');

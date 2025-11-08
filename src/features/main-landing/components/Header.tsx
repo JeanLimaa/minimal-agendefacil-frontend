@@ -29,12 +29,6 @@ export default function HeaderLandingPage() {
               Funcionalidades
             </a>
             <a
-              href="#planos"
-              className="text-neutral-700 hover:text-brand-main transition-colors"
-            >
-              Preços
-            </a>
-            <a
               href="#sobre"
               className="text-neutral-700 hover:text-brand-main transition-colors"
             >

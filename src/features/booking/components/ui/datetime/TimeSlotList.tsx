@@ -1,6 +1,4 @@
 import React from 'react';
-import { LoadingSkeleton } from '../LoadingSkeleton';
-
 interface TimeSlotListProps {
   selectedDate: string | null;
   selectedTime: string | null;
@@ -16,12 +14,6 @@ export const TimeSlotList: React.FC<TimeSlotListProps> = ({
   onSelectTime,
   loading
 }) => {
-  console.log('TimeSlotList props:', {
-    selectedDate,
-    selectedTime,
-    availableTimeSlots,
-    loading
-  })
   return (
     <div>
       <h3 className="font-medium text-neutral-900 mb-4">Escolha o Horário</h3>

@@ -160,6 +160,9 @@ export const useBooking = (initialCompany: Company) => {
         clientInfo: bookingData.clientInfo,
       });
 
+      
+      router.push(`/company/${company.link}/booking/confirmation`);
+
       setBookingResult(response);
 
       // Reset após sucesso
@@ -169,8 +172,6 @@ export const useBooking = (initialCompany: Company) => {
         selectedTime: null,
         clientInfo: null,
       });
-      
-      router.push(`/company/${company.link}/booking/confirmation`);
       return true;
     } catch (err) {
       setError('Erro ao confirmar agendamento');
